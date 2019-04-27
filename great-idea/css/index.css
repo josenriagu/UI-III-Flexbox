@@ -64,68 +64,121 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
-.container{
-	margin: 30px;
-}
-
-header nav{
-	width: 80%;
-	box-align: border-box;
-	display: inline-block;
-	/* float: left; */
-}
-.main-content img{
-	align-content: stretch
-}
-.leftpart h1{
-	font-size: 80px;
-}
-.h3{
-	font-size: 30px;
-}
-.top-content{
-	border-bottom: 1px solid black;
-	margin: 20px 0;
-  padding: 20px 0;
-}
-.bottom-content{
-	border-bottom: 1px solid black;
-	margin: 20px 0;
-  padding: 20px 0;
-}
-.features{
-	width: 50%;
-	display: inline-block;
-	/* float: left; */
-}
-.about{
-	width: 50%;
-	display: inline-block;
-	/* float: right; */
-}
-.services{
-	width: 33.3%;
-	display: inline-block;
-	/* float: left; */
-}
-.product{
-	width: 33.3%;
-	display: inline-block;
-	/* float: left; */
-}
-footer{
-	align-items: center
-}
-
-/* This is where I started Today!
-				It feels great! */
-
-h3{
-	font-size: 20px;
-}
+/* set h styles */
 
 h1{
+	font-size: 80px;
+	text-align: center;
+}
+
+/* set container styles */
+
+.container {
+	width: inherit;
+	margin: 20px 230px 50px 230px;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+}
+
+/* set header styles */
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+header a {
+	margin-right: 60px;
+	text-decoration: none;
+	color: gray;
+}
+
+/* set top content styles */
+
+.top-content {
+	width: 100%;
+	border-bottom: 1px solid black;
+	padding-bottom: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.top-text{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+button{
+	background-color: inherit;
+	border: 1px solid black;
+	padding: 5px 50px;
+}
+
+.top-image{
+	width: 50%;
+}
+
+.top-image img{
+	width: 100%
+}
+/* set middle content styles */
+
+.middle-content {
+	padding-bottom: 30px;
+}
+
+.upper {
+	width: 100%;
+	padding-top: 30px;
+	display: flex;
+}
+
+.middle img {
+	width: 100%;
+}
+
+.lower {
+	width: 100%;
+	display: flex;
+	border-bottom: 1px solid black;
+}
+
+.one{
+	margin-right: 10px;
+}
+
+/* set bottom content styles */
+
+.bottom-content{
+	width: 30%;
+	margin-top: 30px;
+}
+
+.bottom-content p{
+	padding-bottom: 10px;
+}
+
+/* set footer styles */
+
+footer{
+	width: auto;
+	padding: 30px 0px;
+	display: flex;
+	justify-content: center;
+}
+
+/* finish! */
+
+/* This is where I started Today! It feels great!*/
+
+h2{
 	font-size: 30px;
 }
 
